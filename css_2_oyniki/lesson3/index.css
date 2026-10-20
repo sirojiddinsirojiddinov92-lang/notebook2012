@@ -1,0 +1,121 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    animation: colors 0.2s infinite;
+    transition: 0.1s;
+    background-color: blue;
+    color: black;
+}
+.box1:hover{
+    animation: color 3s infinite;
+    transition: 0.1s;
+    background-color: blue;
+}
+.box2:hover{
+    animation: colorsss 0.2s infinite;
+    transition: 0.1s;
+    background-color: blue;
+}
+.box3:hover{
+    animation: colorss 0.5s infinite;
+    transition: 0.1s ;
+    background-color: blue;
+}
+@keyframes color{
+    30%{
+        transition: 0.2s;
+        background-color: red;
+    }
+    60%{
+        transition: 0.2s;
+        background-color: blue;
+    }
+    100%{
+        transition: 0.2s;
+        background-color: green;
+    }
+}
+@keyframes colors{
+    40%{
+        transition: 0.2s;
+        background-color: red;
+    }
+    50%{
+        transition: 0.2s;
+        background-color: blue;
+    }
+}
+@keyframes colorss{
+    10%{
+        transition: 0.2s;
+        background-color: red;
+    }
+    20%{
+        transition: 0.2s;
+        background-color: blue;
+    }
+    70%{
+        transition: 0.2s;
+        background-color: yellow;
+    }
+    80%{
+        transition: 0.2s;
+        background-color: blueviolet;
+    }
+}
+@keyframes colorsss{
+    15%{
+        transition: 0.2s;
+        background-color: red;
+    }
+    25%{
+        transition: 0.2s;
+        background-color: blue;
+    }
+    75%{
+        transition: 0.2s;
+        background-color: yellow;
+    }
+    85%{
+        transition: 0.2s;
+        background-color: blueviolet;
+    }
+    95%{
+        transition: 0.2s;
+        background-color: yellowgreen;
+    }
+    105%{
+        transition: 0.2s;
+        background-color: chocolate;
+    }
+}

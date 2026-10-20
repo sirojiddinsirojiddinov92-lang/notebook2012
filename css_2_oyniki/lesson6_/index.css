@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+header{
+    margin: 20px 20px;
+    display: flex;
+    gap: 470px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 20px;
+}
+
+header div h1{
+    color: red;
+    padding: 20px 20px;
+}
+header div:nth-child(2){
+    display: flex;
+    color: white;
+    gap: 30px;
+    padding: 30px 20px;
+} 
+header div:nth-child(2) p:hover{
+    color: red;
+    text-shadow: 2px 2px 5px white;
+}
+header div:nth-child(3){
+    display: flex;
+    gap: 8px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+header div:nth-child(3) p:nth-child(1):hover{
+    font-size: 40px;
+}
+header div:nth-child(3) p:nth-child(2):hover{
+    font-size: 40px;
+}
+.section1{
+    width: 1480px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url("image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+.section1 div{
+    padding: 110px 50px;
+    color: white;
+}
+.section1 div button{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.section1 div button:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+.section1 div h1{
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+.section2{
+    margin: 40px 20px;
+}
+.section2 h1{
+    color: white;
+}
+
+.section2 div{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+
+}
+.section2 div div{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    font-size: 25px;
+}
+
+
+.section2 div div:hover{
+    background-color: red;
+    font-size: 30px;
+    text-shadow: 5px 5px 6px white;
+    border: 5px dashed;
+    box-shadow: 5px 5px 10px white;
+}
+.section2  h1:hover{
+    font-size: 45px;
+    color: blue;
+}
+
+.section3{
+    margin: 40px 20px;
+}
+.section3 h1{
+    color: white;
+}
+
+.section3 div{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+
+}
+.section3 div div{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    font-size: 25px;
+}
+.section3 div div:hover{
+    background-color: red;
+    font-size: 35px;
+    text-shadow: 5px 5px 8px white;
+    border: 10px dotted;
+}
+.section3 h1:hover{
+    font-size: 45px;
+    color: blueviolet;
+}
+footer{
+    height: 55px;
+    border-radius: 10px;
+    margin: 20px 10px;
+    margin-top: 30px;
+    background-color: rgb(39, 38, 38);
+}
+footer div{
+    display: flex;
+    gap: 70px;
+    justify-content: space-around;
+    color: white;
+    padding-top: 18px;
+}
+footer div p:hover{
+    color: red;
+    text-shadow: 3px 3px 10px white;
+}

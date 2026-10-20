@@ -1,0 +1,9 @@
+
+.sirojiddin{
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to left, #260000, red,blue,aquamarine,red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

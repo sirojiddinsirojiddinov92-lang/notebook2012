@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+h1{
+    color: blue;
+}
+
+.box2{
+    display: flex;
+    gap: 5px;
+    padding-top: 20px;
+    padding-left: 700px;
+}
+
+.box{
+    width: 70px;
+    height: 40px;
+    background-color: green;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box1{
+    width: 70px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ha{
+    text-decoration: none;
+}
+.yuq{
+    text-decoration: none;
+}
+.ha:hover{
+    transform: skew(40deg);
+    transition: 3s;
+    font-size: 20px;
+}
+.yuq:hover{
+    transform: skew(-40deg);
+    transition: 3s;
+    font-size: 20px;
+}

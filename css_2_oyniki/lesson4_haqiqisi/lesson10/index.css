@@ -1,0 +1,19 @@
+.gradient-text{
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(40deg, red, orange, yellow, green, blue, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: animateGradient 5s linear infinite alternate-reverse;
+    background-size: 200%;
+}
+
+@keyframes animateGradient{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}

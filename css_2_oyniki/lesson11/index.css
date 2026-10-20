@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(9, 9, 39);
+}
+nav{
+    width: 100%;
+    height: 130px;
+    margin: 10px 10px;
+    background-color: rgb(26, 26, 62);
+    display: flex;
+    gap: 300px;
+    position: sticky;
+    top: 0;
+}
+nav div:nth-child(2),
+div:nth-child(1){
+    padding: 40px 40px;
+}
+nav div h1{
+    color: white;
+    font-size: 35px;
+}
+
+nav div:nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+nav div:nth-child(2) p{
+    color: white;
+    font-size: 25px;
+}
+nav div:nth-child(3){
+    margin: 30px 90px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(101, 101, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div:nth-child(3) span{
+    color: black;
+}
+
+
+
+
+.typing{
+    margin-top: 200px;
+    color: white;
+    font-size: 65px;
+    width: 28ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: red;
+    animation: typing 4s steps(28) infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+        color: white;
+    }
+    50%{
+        width: 18ch;
+        color: white;
+    }
+    100%{
+        width: 28ch;
+        color: white;
+    } 
+}
+.asosiy{
+    margin-top: 80px;
+    color: white;
+    font-size: 25px;
+}
+.box{
+    color: rgb(121, 121, 246);
+    margin-top: 50px;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.box span{
+    color: rgb(121, 121, 246);
+    margin-left: 20px;
+    font-size: 20px;
+}
+.box:hover{
+    transition: 0.5s;
+    transform: translateY(-20px);
+}
+
+
+.section1{
+    padding-top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.men{
+    color: rgb(83, 83, 246);
+    text-shadow: 3px 3px 20px  rgb(121, 121, 246);
+}
+.men1{
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+}
+.men2{
+    margin-top: 20px;
+    color: grey;
+    font-size: 25px;
+}
+.div1{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(131, 126, 126);
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 40px;
+    border: none;
+}
+.div1 h1{
+    color: rgb(66, 66, 243);
+    margin-bottom: 30px;
+}
+.div1 p{
+    color: rgb(91, 88, 88);
+}
+.div1:hover{
+    transition: 0.5s;
+    transform: translateY(-20px);
+    border: 1px solid blue;
+    box-shadow: 5px 5px 20px white;
+}   
+
+.div2{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(131, 126, 126);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+    border: none;
+}
+.div2 h1{
+    color: rgb(66, 66, 243);
+    margin-bottom: 30px;
+}
+.div2 p{
+    color: rgb(91, 88, 88);
+}
+.div2:hover{
+    transition: 0.5s;
+    transform: translateY(-20px);
+    border: 1px solid blue;
+    box-shadow: 5px 5px 20px white;
+}   
+
+.div3{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(131, 126, 126);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+    border: none;
+}
+.div3 h1{
+    color: rgb(66, 66, 243);
+    margin-bottom: 30px;
+}
+.div3 p{
+    color: rgb(91, 88, 88);
+}
+.div3:hover{
+    transition: 0.5s;
+    transform: translateY(-20px);
+    border: 1px solid blue;
+    box-shadow: 5px 5px 20px white;
+}   
+.divlar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.divlar2{
+    margin-top: 60px;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(131, 126, 126);
+}
+.divlarr{
+    display: flex;
+}
+.divlar2 .qora{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.divlar2 .qora .span1{
+    color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+}
+.divlar2 .qora .span2{
+    color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.divlar2 .qora .span3{
+    color: grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.qora2 span{
+    color:  rgb(66, 66, 243);
+}
+.qora2 div p:nth-child(1){
+    margin-top: 20px;
+}
+.qora2 div p:nth-child(2){
+    margin-top: 20px;
+}
+.qora2 div p:nth-child(3){
+    margin-top: 20px;
+}
+.qora2 div p:nth-child(4){
+    margin-top: 20px;
+}
+.qora2 div p:nth-child(5){
+    margin-top: 20px;
+}
+.qora2 div p:nth-child(6){
+    margin-top: 20px;
+}
+.qora2 div{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.section2{
+    margin-top: 300px;
+}
+.projects{
+    color: rgb(66, 66, 243);
+    text-shadow: 3px 3px 30px white;
+}
+.man{
+    margin-top: 20px;
+    font-size: 55px;
+    color: white;
+}
+.bu{
+    margin-top: 20px;
+    color: grey;
+    font-size: 25px;
+}
+.qutilar{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+.qutilar div{
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+.qutilar div:nth-child(1){
+    width: 500px;
+    height: 320px;
+    background-color: rgb(187, 184, 184);
+    border-radius: 20px;
+}
+.qutilar div:nth-child(2){
+    width: 500px;
+    height: 320px;
+    background-color: rgb(187, 184, 184);
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.qutilar div:nth-child(3){
+    width: 500px;
+    height: 320px;
+    background-color:rgb(187, 184, 184);
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.gw{
+    margin-top: 15px;
+    color: white;
+    font-size: 35px;
+}
+.sayt{
+    margin-top: 20px;
+    color: grey;
+}
+.clas1{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(66, 66, 243);
+    border: none;
+}
+.clas2{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.clas3{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.claslar{
+    display: flex;
+    gap: 10px;
+}
+.butonlar{
+    display: flex;
+    gap: 10px;
+}
+.butonlar button:nth-child(1){
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(66, 66, 243);
+    border: none;
+}
+.butonlar button:nth-child(2){
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+}
+.class1{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(66, 66, 243);
+    border: none;
+}
+.class3{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.class2{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.class4{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.classlar{
+    display: flex;
+    gap: 10px;
+}
+.classs1{
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(66, 66, 243);
+    border: none;
+}
+.classs3{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.classs2{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.classs4{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(66, 66, 243);
+    border-radius: 20px;
+    border: none;
+}
+.classslar{
+    display: flex;
+    gap: 10px;
+}
+
+
+.section3{
+    margin-top: 400px;
+}
+.contact{
+    color: rgb(66, 66, 243);
+    text-shadow: 2px 2px 20px white;
+}
+.contact1{
+    color: white;
+    font-size: 55px;
+    margin-top: 20px;
+
+}
+.contact2{
+    color: grey;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.contacts{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact3{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(131, 129, 129);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.contact4{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(131, 129, 129);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.contact5{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(131, 129, 129);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.rasmlar{
+    display: flex;
+    gap: 80px;
+}
+.rasm{
+    width: 620px;
+    height: 380px;
+    background-color: rgb(131, 129, 129);
+    border-radius: 20px;
+    padding: 30px 15px;
+}
+.son1{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+.son2{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: white;
+}
+.son3{
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: white;
+}
+.son4{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,blue,red);
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color:  rgb(199, 197, 197);
+}
+.boxxlar{
+    display: flex;
+    gap: 850px;
+}
+.ism{
+    color: white;
+    font-size: 45px;
+}
+.ism:hover{
+    color: blue;
+    text-shadow: 2px 2px 20px blue;
+}
+.ism1{
+    font-size: 20px;
+    color:grey ;
+    margin-top: 20px;
+}
+footer div div:nth-child(1){
+    padding-top: 100px;
+    padding-left: 30px;
+}
+footer div div:nth-child(2){
+    padding-top: 100px;
+    padding-right: 30px;
+    display: flex;
+    gap: 15px;
+}
+footer div div a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+footer div div a span{
+    color: white;
+}
+footer div div a:hover{
+    background: linear-gradient(135deg, blue,black,red);
+    transform: rotate(15deg) translateY(-10px);
+}  
+.line {
+    margin-bottom: 90px;
+    width: 100%;
+    height: 0.1px;
+    background-color: #3a4353;
+}
+.ohirgisi{
+    margin-top: 40px;
+    color: grey;
+    font-size: 17px;
+}
+
+nav div:nth-child(1) h1:hover{
+    transition: 0.5s;
+    color: red;
+    text-shadow: 5px 5px 20px red;
+}
+nav div:nth-child(2) p:hover{
+    transition: 0.5s;
+    color: red;
+    text-shadow: 5px 5px 20px red;
+}
+
+
+
+
+
+@media (max-width: 400px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+    nav{
+        height: auto;
+        margin: 0;
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav div:nth-child(1),
+    nav div:nth-child(2),
+    nav div:nth-child(3){
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .typing{
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+        white-space: normal;
+        animation: none;
+    }
+
+    .asosiy{
+        font-size: 18px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .box{
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .section1,
+    .divlarr,
+    .divlar,
+    .qutilar,
+    .contacts,
+    .rasmlar,
+    .boxxlar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .div1,
+    .div2,
+    .div3{
+        width: 95%;
+    }
+
+    .divlar2{
+        width: 95%;
+        height: auto;
+    }
+
+    .qora2 div{
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .section2{
+        margin-top: 120px;
+    }
+
+    .man,
+    .contact1,
+    .men1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .bu,
+    .contact2,
+    .men2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .qutilar div:nth-child(1),
+    .qutilar div:nth-child(2),
+    .qutilar div:nth-child(3){
+        width: 95%;
+        height: auto;
+        margin: 0;
+    }
+
+    .claslar,
+    .classlar,
+    .classslar,
+    .butonlar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rasm{
+        width: 95%;
+        height: auto;
+    }
+
+    footer{
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .boxxlar{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer div div:nth-child(1),
+    footer div div:nth-child(2){
+        padding: 0;
+    }
+
+    .ism{
+        font-size: 35px;
+    }
+
+    .ism1,
+    .ohirgisi{
+        text-align: center;
+    }
+}

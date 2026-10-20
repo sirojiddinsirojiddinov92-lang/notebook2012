@@ -1,0 +1,36 @@
+.boxlar{
+    display: flex;
+    gap: 10px;
+    padding-left: 700px;
+}
+
+.box{
+    width: 70px;
+    height: 40px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 70px;
+    height: 40px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    transition: 3s;
+    transform: rotate(-10deg);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(156, 244, 156);
+}
+.box1:hover{
+    transition: 3s;
+    transform: rotate(10deg);
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}

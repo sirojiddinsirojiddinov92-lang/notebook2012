@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex-direction-X yoki Y o'qi bo'yicha yo'nalishni belgilaydi,qiymatlari: column-y o'qiga yoyadi, column-reverse-Y o'qida teskariga moslaydi */
+/* flex-wrap-sig'magan elemntni yangi qatorga tushurib beradi,qimatlari:wrap-yangi qatorga tushuradi,wrap-reverse-yangi qatorga teskari qilib tushuradi */
+/* flex-flow-flex-direction va flew-wrap codelarini bir qatorda yozish uchun foydalaniladi,masalan flex-flow column wrap-reverse */
+/* justifiy-content-vazifasi elementlarni Xo'qi bo'yicha joylashtiradi,qiymatlari: space-between-ikki chekkadan joy qolmaydi o'rtadagi joylar esa bir wil space-around-ikki chekkadan bir wil va elementlar orasi bir xil,space-evenly-barcha oradagi joylar bir xil */
+/* align-items-vazifasi elementlarni Y o'qi bo'yicha joylashtirib beradi */
+.card{
+    width: 105px;
+    height: 105px;
+    border: 2px solid blue;
+    padding: 10px;
+}

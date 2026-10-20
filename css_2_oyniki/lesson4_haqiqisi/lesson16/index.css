@@ -1,0 +1,955 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    background:#000;
+}
+
+.scene{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+
+/* SKY */
+
+.sky{
+    position:absolute;
+    width:100%;
+    height:60%;
+    background:
+    linear-gradient(
+        to bottom,
+        #07152f,
+        #2379c8,
+        #80dfff
+    );
+}
+
+
+/* SUN */
+
+.sun{
+
+    position:absolute;
+
+    width:130px;
+    height:130px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        #fff7a0,
+        #ffd000,
+        #ff8c00
+    );
+
+    top:80px;
+    left:75%;
+
+    box-shadow:
+    0 0 40px #ffd000,
+    0 0 100px #ff9900;
+
+    animation:sunMove 10s infinite alternate;
+
+}
+
+
+@keyframes sunMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(40px);
+    }
+
+}
+
+
+
+/* CLOUDS */
+
+
+.cloud{
+
+    position:absolute;
+
+    width:180px;
+    height:60px;
+
+    background:white;
+
+    border-radius:50px;
+
+    opacity:.8;
+
+    filter:blur(1px);
+
+}
+
+
+.cloud:before,
+.cloud:after{
+
+    content:"";
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:50%;
+
+}
+
+
+.cloud:before{
+
+    width:80px;
+    height:80px;
+
+    top:-35px;
+    left:30px;
+
+}
+
+
+.cloud:after{
+
+    width:60px;
+    height:60px;
+
+    top:-20px;
+    right:30px;
+
+}
+
+
+
+.cloud1{
+
+    top:100px;
+    left:-200px;
+
+    animation:cloudMove 25s linear infinite;
+
+}
+
+
+.cloud2{
+
+    top:200px;
+    left:-300px;
+
+    transform:scale(.7);
+
+    animation:cloudMove 35s linear infinite;
+
+}
+
+
+.cloud3{
+
+    top:60px;
+    left:-400px;
+
+    transform:scale(1.3);
+
+    animation:cloudMove 45s linear infinite;
+
+}
+
+
+
+@keyframes cloudMove{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(140vw);
+
+    }
+
+}
+
+
+
+
+/* MOUNTAINS */
+
+
+.mountains{
+
+    position:absolute;
+
+    bottom:30%;
+
+    width:100%;
+    height:250px;
+
+}
+
+
+
+.mountain{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:0;
+    height:0;
+
+    border-left:180px solid transparent;
+    border-right:180px solid transparent;
+
+    border-bottom:250px solid #243b55;
+
+}
+
+
+.mountain1{
+
+    left:10%;
+
+}
+
+
+.mountain2{
+
+    left:40%;
+
+    border-bottom-color:#1b3048;
+
+    transform:scale(1.4);
+
+}
+
+
+.mountain3{
+
+    right:5%;
+
+    border-bottom-color:#314b65;
+
+}
+
+
+
+
+/* FOREST */
+
+
+.forest{
+
+    position:absolute;
+
+    bottom:22%;
+
+    width:100%;
+
+    height:180px;
+
+}
+
+
+
+.tree{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:20px;
+    height:100px;
+
+    background:#40200d;
+
+}
+
+
+.tree:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:100px;
+
+    background:#075e25;
+
+    border-radius:50%;
+
+    top:-70px;
+
+    left:-40px;
+
+}
+
+
+.tree1{
+    left:10%;
+}
+
+.tree2{
+    left:25%;
+    transform:scale(1.3);
+}
+
+.tree3{
+    left:55%;
+}
+
+.tree4{
+    left:75%;
+    transform:scale(1.5);
+}
+
+.tree5{
+    left:90%;
+}
+
+
+
+
+
+/* ROAD */
+
+
+.road{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:25%;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        #444,
+        #111
+    );
+
+
+    perspective:500px;
+
+}
+
+
+
+.road-line{
+
+    position:absolute;
+
+    width:120px;
+
+    height:15px;
+
+    background:#fff;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    animation:roadMove 1s linear infinite;
+
+}
+
+
+.line1{
+    top:0;
+}
+
+.line2{
+    top:100px;
+}
+
+.line3{
+    top:200px;
+}
+
+.line4{
+    top:300px;
+}
+
+
+
+@keyframes roadMove{
+
+    from{
+
+        transform:
+        translate(-50%,0);
+
+    }
+
+    to{
+
+        transform:
+        translate(-50%,400px);
+
+    }
+
+}
+/* ==========================
+   CARS
+========================== */
+
+
+.cars{
+
+    position:absolute;
+
+    bottom:18%;
+
+    width:100%;
+
+    height:200px;
+
+}
+
+
+
+/* GENERAL CAR */
+
+
+.car{
+
+    position:absolute;
+
+    width:260px;
+
+    height:100px;
+
+    animation:
+    drive 8s linear infinite;
+
+}
+
+
+
+.body{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:20px;
+
+    width:220px;
+
+    height:60px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ff3030,
+        #8b0000
+    );
+
+    border-radius:
+
+    30px 50px 15px 15px;
+
+
+    box-shadow:
+
+    0 0 20px rgba(255,0,0,.7);
+
+}
+
+
+
+/* CAR TOP */
+
+
+.body:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:110px;
+
+    height:45px;
+
+    background:
+
+    linear-gradient(
+        #bdefff,
+        #1976a8
+    );
+
+
+    top:-35px;
+
+    left:60px;
+
+
+    border-radius:
+
+    30px 30px 5px 5px;
+
+
+}
+
+
+
+/* FRONT LIGHT */
+
+
+.body:after{
+
+    content:"";
+
+    position:absolute;
+
+    width:25px;
+
+    height:15px;
+
+    background:#fff;
+
+    right:-5px;
+
+    top:25px;
+
+
+    border-radius:50%;
+
+
+    box-shadow:
+
+    0 0 25px white,
+    0 0 50px yellow;
+
+}
+
+
+
+/* WHEELS */
+
+
+.wheel{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:55px;
+
+    height:55px;
+
+    background:#111;
+
+    border-radius:50%;
+
+
+    border:
+
+    8px solid #333;
+
+
+    animation:
+
+    wheelSpin .5s linear infinite;
+
+}
+
+
+
+.wheel:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:15px;
+
+    height:15px;
+
+    background:#aaa;
+
+    border-radius:50%;
+
+    top:12px;
+
+    left:12px;
+
+}
+
+
+.wheel1{
+
+    left:45px;
+
+}
+
+
+.wheel2{
+
+    right:35px;
+
+}
+
+
+
+@keyframes wheelSpin{
+
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+
+
+/* CAR POSITIONS */
+
+
+.car1{
+
+    top:20px;
+
+    animation-duration:9s;
+
+}
+
+
+
+.car2{
+
+    top:90px;
+
+    transform:scale(.8);
+
+    animation-duration:12s;
+
+    animation-delay:3s;
+
+}
+
+
+
+.car3{
+
+    top:150px;
+
+    transform:scale(.6);
+
+    animation-duration:15s;
+
+    animation-delay:5s;
+
+}
+
+
+
+/* MOVEMENT */
+
+
+@keyframes drive{
+
+
+    from{
+
+        left:-300px;
+
+    }
+
+
+    to{
+
+        left:110%;
+
+    }
+
+
+}
+/* EXTRA CARS */
+
+
+.blueCar{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #00c6ff,
+        #003cff
+    );
+
+}
+
+
+.blackCar{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #555,
+        #000
+    );
+
+}
+
+
+.greenCar{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #00ff88,
+        #006633
+    );
+
+}
+
+
+.yellowCar{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffff00,
+        #ff8800
+    );
+
+}
+
+
+
+
+.car4{
+
+    top:40px;
+
+}
+
+
+.car5{
+
+    top:120px;
+
+}
+
+
+
+/* OPPOSITE DIRECTION */
+
+
+.reverse{
+
+    animation-name:reverseDrive;
+
+}
+
+
+@keyframes reverseDrive{
+
+
+from{
+
+    left:110%;
+
+}
+
+
+to{
+
+    left:-350px;
+
+}
+
+
+}
+
+
+
+/* ROAD LIGHTS */
+
+
+.lights{
+
+    position:absolute;
+
+    bottom:25%;
+
+    width:100%;
+
+    height:100px;
+
+}
+
+
+
+.lights span{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    box-shadow:
+
+    0 0 20px white,
+    0 0 50px cyan;
+
+    animation:
+
+    lightMove 2s linear infinite;
+
+}
+
+
+
+.lights span:nth-child(1){
+
+    left:10%;
+
+}
+
+
+.lights span:nth-child(2){
+
+    left:35%;
+
+    animation-delay:.5s;
+
+}
+
+
+.lights span:nth-child(3){
+
+    left:60%;
+
+    animation-delay:1s;
+
+}
+
+
+.lights span:nth-child(4){
+
+    left:85%;
+
+    animation-delay:1.5s;
+
+}
+
+
+
+@keyframes lightMove{
+
+
+from{
+
+    transform:
+    translateY(0)
+    scale(1);
+
+}
+
+
+to{
+
+    transform:
+    translateY(120px)
+    scale(.3);
+
+}
+
+
+}
+
+
+
+/* ROAD SPEED EFFECT */
+
+
+.road:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+
+    background:
+
+    repeating-linear-gradient(
+
+    to bottom,
+
+    transparent 0px,
+
+    transparent 40px,
+
+    rgba(255,255,255,.1) 50px
+
+    );
+
+
+    animation:
+
+    roadSpeed .8s linear infinite;
+
+}
+
+
+
+@keyframes roadSpeed{
+
+
+from{
+
+    background-position:0 0;
+
+}
+
+
+to{
+
+    background-position:0 100px;
+
+}
+
+
+}
